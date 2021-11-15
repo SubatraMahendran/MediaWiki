@@ -20,9 +20,12 @@ aws cloudformation deploy --template-file ./deployment.yaml --stack-name bluegre
 Waiting for changeset to be created..
 Waiting for stack create/update to complete
 Successfully created/updated stack - bluegreenapp1
+```
 
 * To install mediaWiki using ansible.
 ```
 echo "Run Ansible Playbook to deploy mediaWiki"
 ansible-playbook playbook.yaml -i invertory.txt
+
+
 ```
