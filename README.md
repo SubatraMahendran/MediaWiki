@@ -152,4 +152,6 @@ MediaWiki Page : http://wikiapp-internal-elb-755010802.ap-south-1.elb.amazonaws.
 Please refer the screenshot for the browser images .
 
 ```
+* Issues with Scaling application.
 
+The database and application deployed in same machine will create stateless database systems .Recommendation is to create seperate database layer and setup the application . 
