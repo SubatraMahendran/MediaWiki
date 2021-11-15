@@ -125,9 +125,17 @@ TASK [restore configuration] ***************************************************
 changed: [VM1]
 changed: [VM2]
 
+TASK [mysql_db] ****************************************************************
+changed: [VM1]
+changed: [VM2]
+
+TASK [mysql_user] ****************************************************************
+changed: [VM1]
+changed: [VM2]
+
 PLAY RECAP *********************************************************************
-VM1                        : ok=18   changed=13   unreachable=0    failed=0    skipped=0    rescued=0    ignored=1   
-VM2                        : ok=18   changed=13   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+VM1                        : ok=20   changed=15   unreachable=0    failed=0    skipped=0    rescued=0    ignored=1   
+VM2                        : ok=20   changed=15   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
 
 
 
