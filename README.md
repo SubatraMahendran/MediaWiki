@@ -138,6 +138,18 @@ VM1                        : ok=20   changed=15   unreachable=0    failed=0    s
 VM2                        : ok=20   changed=15   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
 
 
+```
+* To setup mediaWiki via Browser.
 
+Load Balancer URL : http://wikiapp-internal-elb-755010802.ap-south-1.elb.amazonaws.com/mediawiki/
+Set up the DB and upload the LocalSettings.php file to /var/www/html/mediawiki/ folder 
+
+Uploading LocalSetting.php :  scp -i  keyname.pem ./LocalSettings.php  ec2-user@InstanceIPaddress:/home/ec2-user/
+                              mv /home/ec2-user/LocalSettings.php /var/www/html/mediawiki/
+                              
+MediaWiki Page : http://wikiapp-internal-elb-755010802.ap-south-1.elb.amazonaws.com/mediawiki/index.php?title=Main_Page
+
+Please refer the screenshot for the browser images .
 
 ```
+
